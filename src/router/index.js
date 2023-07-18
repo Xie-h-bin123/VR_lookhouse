@@ -1,20 +1,66 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import Index from '../views/Index.vue'
+import Chat from '../views/Chat.vue'
+import Wiki from '../views/Wiki.vue'
+import Me from '../views/Me.vue'
+import SecondHand from '../views/Second_hand.vue'
+import Chat_index from '../views/Chat_index.vue'
+import Detail from '../views/Detail.vue'
+import Video from '../views/Video.vue'
+import Recommend from '../views/Recommend.vue'
+import Register from '../views/Register.vue'
 
 const routes = [
   {
     path: '/',
-    name: 'home',
-    component: HomeView
+    name: 'index',
+    component: Index
   },
   {
-    path: '/about',
-    name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
-  }
+    path: '/chat',
+    name: 'chat',
+    component: Chat
+  },
+  {
+    path: '/wiki',
+    name: 'wiki',
+    component: Wiki
+  },
+  {
+    path: '/me',
+    name: 'me',
+    component: Me
+  },	  
+  {
+	path: '/second_hand',
+	name: 'second_hand',
+	component: SecondHand
+  },
+  {
+  	path: '/detail',
+  	name: 'detail',
+  	component: Detail
+  },
+  {
+  	path: '/chat_index',
+  	name: 'chat_index',
+  	component: Chat_index
+  },
+  {
+  	path: '/video',
+  	name: 'video',
+  	component: Video
+  },
+  {
+  	path: '/recommend',
+  	name: 'recommend',
+  	component: Recommend
+  },
+  {
+  	path: '/register',
+  	name: 'register',
+  	component: Register
+  },
 ]
 
 const router = createRouter({
