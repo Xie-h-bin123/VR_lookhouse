@@ -1,8 +1,8 @@
 @font-face {
   font-family: "iconfont"; /* Project id 4166407 */
-  src: url('iconfont.woff2?t=1689579242789') format('woff2'),
-       url('iconfont.woff?t=1689579242789') format('woff'),
-       url('iconfont.ttf?t=1689579242789') format('truetype');
+  src: url('iconfont.woff2?t=1689736063602') format('woff2'),
+       url('iconfont.woff?t=1689736063602') format('woff'),
+       url('iconfont.ttf?t=1689736063602') format('truetype');
 }
 
 .iconfont {
@@ -11,6 +11,18 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-goufangzigehecha:before {
+  content: "\e759";
+}
+
+.icon-ipadicongoufangzige:before {
+  content: "\e6a2";
+}
+
+.icon-liwu:before {
+  content: "\e617";
 }
 
 .icon-wodedianping:before {

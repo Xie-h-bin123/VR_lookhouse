@@ -66,7 +66,7 @@
 		display: grid;
 		grid-template-columns: auto auto;
 		grid-template-rows: auto auto;
-		justify-items: start;
+		justify-content: space-between;
 		height: 15vh;
 		>div{
 			display: flex;

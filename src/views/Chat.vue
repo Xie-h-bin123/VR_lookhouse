@@ -18,13 +18,13 @@
 		<div class="content">
 			<div class="my">
 				<div class="head">
-					<img src="http://47.113.189.122/NAS/img/person1.jpg"/>
+					<img src="/img/person1.jpg"/>
 				</div>
 				<div class="text">
 					<div class="text1">
 						<div>板楼&nbsp;交通便利&nbsp;精装可拎包入住&nbsp;满五&nbsp;双卫格局 &nbsp;环境优美</div>
 						<div>
-							<div><img src="http://47.113.189.122/NAS/img/house1.jpg"/></div>
+							<div><img src="/img/house1.jpg"/></div>
 							<div>
 								<span>4室 2厅 2卫 119.15平</span>
 								<span>132.8万</span>
@@ -53,39 +53,39 @@
 			</div>
 		</div>
 		<q-chat-message
-			avatar="http://47.113.189.122/NAS/img/person2.jpg"
+			avatar="/img/person2.jpg"
 			:text="['你好,这套房子还在的']"
 			bg-color="white"
 		></q-chat-message>
 		<q-chat-message
-			avatar="http://47.113.189.122/NAS/img/person2.jpg"
+			avatar="/img/person2.jpg"
 			:text="['老板，你是要租房还是买房']"
 			bg-color="white"
 		></q-chat-message>
 		<q-chat-message
-			avatar="http://47.113.189.122/NAS/img/person2.jpg"
+			avatar="/img/person2.jpg"
 			:text="['我看你这边是找房预算是5到8千']"
 			bg-color="white"
 		></q-chat-message>
 		<q-chat-message
-			avatar="http://47.113.189.122/NAS/img/person2.jpg"
+			avatar="/img/person2.jpg"
 			:text="['你可以考虑一下']"
 			bg-color="white"
 		></q-chat-message>
 		<!-- <div class="other">
-			<div><img src="http://47.113.189.122/NAS/img/person2.jpg"/></div>
+			<div><img src="/img/person2.jpg"/></div>
 			<div>你好,这套房子还在的</div>
 		</div>
 		<div class="other">
-			<div><img src="http://47.113.189.122/NAS/img/person2.jpg"/></div>
+			<div><img src="/img/person2.jpg"/></div>
 			<div>老板，你是要租房还是买房</div>
 		</div>
 		<div class="other">
-			<div><img src="http://47.113.189.122/NAS/img/person2.jpg"/></div>
+			<div><img src="/img/person2.jpg"/></div>
 			<div>我看你这边是找房预算是5到8千</div>
 		</div>
 		<div class="other">
-			<div><img src="http://47.113.189.122/NAS/img/person2.jpg"/></div>
+			<div><img src="/img/person2.jpg"/></div>
 			<div>你可以考虑一下</div>
 		</div> -->
 		<div class="space"></div>

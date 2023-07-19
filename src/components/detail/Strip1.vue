@@ -39,16 +39,16 @@
 			
 			&:nth-child(1){
 				padding-left: 5px;
-				font-size: 15px;
+				font-size: 4vw;
 				span{
 					&:nth-child(2){
-						font-size: 18px;
+						font-size: 5vw;
 						margin-left: 5px;
 					}
 				}
 			}
 			&:nth-child(2){
-				font-size: 15px;
+				font-size: 4vw;
 				margin-right: 5px;
 			}
 		}

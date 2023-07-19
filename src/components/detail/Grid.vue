@@ -29,7 +29,7 @@
 		align-items: center;
 		span{
 			&:nth-child(1){
-				font-size: 20px;
+				font-size: 5vw;
 			}
 			&:nth-child(2){
 				font-size: 10px;

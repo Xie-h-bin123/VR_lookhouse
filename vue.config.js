@@ -9,5 +9,8 @@ module.exports = defineConfig({
       importStrategy: 'kebab',
       rtlSupport: false
     }
-  }
+  },
+  devServer: {
+      port: 3000 // 更改为您想要的端口号
+    }
 })

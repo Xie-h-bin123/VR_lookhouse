@@ -1,8 +1,14 @@
 <!-- 视图层 -->
 <template>
     <div class="register">
+		<van-nav-bar
+		  left-text="返回"
+		  left-arrow
+		  @click-left="onClickLeft"
+		  :style="{ backgroundColor: 'transparent', }"
+		/>
         <div class="menu vw80">
-           <div>登入</div> 
+           <div @click="login">登入</div>
            <div class="on">注册</div>
         </div>
         <div class="form vw80">
@@ -38,14 +44,31 @@
 
 <!-- 逻辑层 -->
 <script setup>
-
+	import {useRouter} from 'vue-router';
+	const route= useRouter();
+	const onClickLeft = () => {route.push({path:'/me'})};
+	const login = () => {route.push({path:'/login'})}
 </script>
 
 
 <!-- 样式层 -->
-<style  scoped>
+<style lang="less" scoped>
+	:deep(.van-nav-bar){
+		.van-icon{
+			color: #000;
+			font-size: 20px;
+		}
+		.van-nav-bar__text{
+			color: #000;
+			font-size: 15px;
+		}
+	}
+	
+.iconfont{
+	color: #000;
+}
 .register{
-    background-image: url("http://47.113.189.122/NAS/img/bg.png");
+    background-image: url("/public/img/bg.png");
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -62,7 +85,7 @@
     display: flex;
     justify-content: center;
     gap: 10px;
-    padding-top: 46%;
+    padding-top: 30%;
     color: #000;
 }
 .register .menu div{
@@ -119,6 +142,7 @@
 .register .others{
     display:flex;
     align-items: center;
+	justify-content: center;
 }
 .register .others .icon{
     width: 10vw;

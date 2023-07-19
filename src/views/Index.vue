@@ -23,16 +23,16 @@
 					<div class="content_1">活动优惠</div>
 					<div class="content_2">参与即享更多优惠</div>
 					<div>
-						<img src="http://47.113.189.122/NAS/img/house1.jpg"/>
-						<img src="http://47.113.189.122/NAS/img/house2.jpg"/>
+						<img src="/img/house1.jpg"/>
+						<img src="/img/house2.jpg"/>
 					</div>
 				</div>
 				<div class="active_content_2">
 					<div class="content_1">新盘强先</div>
 					<div class="content_2">新盘抢先 先赌为快</div>
 					<div>
-						<img src="http://47.113.189.122/NAS/img/house3.jpg"/>
-						<img src="http://47.113.189.122/NAS/img/house4.jpg"/>
+						<img src="/img/house3.jpg"/>
+						<img src="/img/house4.jpg"/>
 					</div>
 				</div>
 			</div>
@@ -51,10 +51,10 @@
 			<div class="title"><span>为你推荐二手房</span></div>
 			<div class="content">
 				<div class="img">
-					<img src="http://47.113.189.122/NAS/img/bg1.jpg"/>
+					<img src="/img/bg1.jpg"/>
 					<div class="right-images">
-						<img src="http://47.113.189.122/NAS/img/bg2.jpg"/>
-						<img src="http://47.113.189.122/NAS/img/bg3.jpg"/>
+						<img src="/img/bg2.jpg"/>
+						<img src="/img/bg3.jpg"/>
 					</div>
 				</div>
 				<div class="text">
@@ -85,7 +85,7 @@
 				<router-link to="/detail" style="color: #000;">
 			    <div class="list">
 			        <div class="list_branch">
-			        <img src="http://47.113.189.122/NAS/img/bg1.jpg">
+			        <img src="/img/bg1.jpg">
 			        <div class="content">
 			            <div >山水文园2式1厅</div>
 			            <div>87.79m²</div>
@@ -97,7 +97,7 @@
 				</router-link>
 			    <div class="list">
 			        <div class="list_branch">
-			        <img src="http://47.113.189.122/NAS/img/bg2.jpg">
+			        <img src="/img/bg2.jpg">
 			        <div class="content">
 			            <div >山水文园2式1厅</div>
 			            <div>87.79m²</div>
@@ -111,7 +111,7 @@
 			<div class="title"><span>为你推荐租房</span></div>
 			<div class="content">
 				<div class="content_1">
-					<img src="http://47.113.189.122/NAS/img/bg1.jpg"/>
+					<img src="/img/bg1.jpg"/>
 					<div>
 						<div><span>君泰中央公园A区</span></div>
 						<div><span>2式一厅|整组</span></div>
@@ -120,7 +120,7 @@
 					</div>
 				</div>
 				<div class="content_2">
-					<img src="http://47.113.189.122/NAS/img/bg1.jpg"/>
+					<img src="/img/bg1.jpg"/>
 					<div>
 						<div><span>君泰中央公园A区</span></div>
 						<div><span>2式一厅|整组</span></div>
@@ -129,7 +129,7 @@
 					</div>
 				</div>
 				<div class="content_3">
-					<img src="http://47.113.189.122/NAS/img/bg1.jpg"/>
+					<img src="/img/bg1.jpg"/>
 					<div>
 						<div><span>君泰中央公园A区</span></div>
 						<div><span>2式一厅|整组</span></div>
@@ -138,7 +138,7 @@
 					</div>
 				</div>
 				<div class="content_4">
-					<img src="http://47.113.189.122/NAS/img/bg1.jpg"/>
+					<img src="/img/bg1.jpg"/>
 					<div>
 						<div><span>君泰中央公园A区</span></div>
 						<div><span>2式一厅|整组</span></div>
@@ -199,7 +199,7 @@ import Tabbar from '../components/Tabbar.vue'
 			justify-content: center;
 			align-items: center;
 			.main_block_in{
-				width: 70%;
+				width: 70vw;
 				height: 25vh;
 				>div:deep{
 					--van-tab-font-size:18px;
@@ -283,18 +283,19 @@ import Tabbar from '../components/Tabbar.vue'
 				align-items: center;
 			}
 	        img {
-				padding-top: 10px;
+				border-radius: 5px;
+				margin-top: 10px;
 				object-fit: cover;
 				/* 设置图片大小 */
-				width: 20vw; /* 您可以根据需要调整大小 */
+				width: 17vw; /* 您可以根据需要调整大小 */
 				height: 50px; /* 您可以根据需要调整大小 */
 			  &:nth-child(1){
-				  padding-left: 10px;
-				  padding-right: 5px;
+				  margin-left: 10px;
+				  margin-right: 5px;
 			  }
 			  &:nth-child(2){
-				  padding-left: 0px;
-				  padding-right: 10px;
+				  margin-left: 0px;
+				  margin-right: 10px;
 			  }
 	        }
 	      }

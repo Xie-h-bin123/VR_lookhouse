@@ -19,9 +19,11 @@
 <!-- 样式层 -->
 <style lang="less" scoped>
 	.grid1{
-		.van-grid{
+		:deep(.van-grid){
 			.van-grid-item{
-				
+				.van-grid-item__text{
+					margin: 1px;
+				}
 			}
 		}
 	}

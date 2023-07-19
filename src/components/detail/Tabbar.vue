@@ -31,7 +31,7 @@
 .tabbar{
 	.van-tabbar-item{
 		&:nth-child(1){
-			flex: 1;
+			flex: 2;
 			margin-left: 10px;
 			margin-right: 10px;
 			color: #000;

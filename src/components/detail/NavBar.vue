@@ -10,7 +10,7 @@
 		  <q-menu>
 			<q-list dense style="min-width: 100px">
 			  <q-item clickable v-close-popup>
-				<q-item-section @click="go_other_VR">查看更多信息</q-item-section>
+				<q-item-section @click="go_other_VR">查看更多房间信息</q-item-section>
 			  </q-item>
 			  </q-list>
 		  </q-menu>
@@ -29,7 +29,7 @@ const router = useRouter();
 const onClickLeft = () => history.back();
 const go_other_VR = () =>{
 	router.push({
-		name:'register'
+		name:'otherVR'
 	})
 }
 </script>

@@ -23,9 +23,9 @@
             <span class="color"></span>
             <span class="text">为你推荐二手房</span>
             </div>
-            <div class="list">
+            <div class="list" @click="vr">
                 <div class="list_branch">
-                <img src="http://47.113.189.122/NAS/img/bg1.jpg">
+                <img src="/img/bg1.jpg">
                 <div class="content">
                     <div >山水文园2式1厅</div>
                     <div>87.79m²</div>
@@ -36,7 +36,7 @@
             </div>
             <div class="list">
                 <div class="list_branch">
-                <img src="http://47.113.189.122/NAS/img/bg2.jpg">
+                <img src="/img/bg2.jpg">
                 <div class="content">
                     <div >山水文园2式1厅</div>
                     <div>87.79m²</div>
@@ -47,7 +47,7 @@
             </div>
             <div class="list">
                 <div class="list_branch">
-                <img src="http://47.113.189.122/NAS/img/bg3.jpg">
+                <img src="/img/bg3.jpg">
                 <div class="content">
                     <div >山水文园2式1厅</div>
                     <div>87.79m²</div>
@@ -58,7 +58,7 @@
             </div>
             <div class="list">
                 <div class="list_branch">
-                <img src="http://47.113.189.122/NAS/img/bg1.jpg">
+                <img src="/img/bg1.jpg">
                 <div class="content">
                     <div >山水文园2式1厅</div>
                     <div>87.79m²</div>
@@ -80,6 +80,7 @@ const router = useRouter()
 const go_index = () => {
   router.push('/')
 }
+const vr = () => {router.push('/detail')}
 </script>
 
 
@@ -222,7 +223,7 @@ const go_index = () => {
     align-items: center;
 }
 .second-hand .house .list .list_branch img{
-    height: 100px;
+    width: 40vw;
 }
 
 .second-hand .house .list .list_branch .content{

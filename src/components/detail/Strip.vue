@@ -33,21 +33,20 @@
 		background-color: #e45542;
 		border-radius: 3px;
 		color: #fff;
-		div{
-			
+		div{			
 			&:nth-child(1){
 				padding-left: 5px;
-				font-size: 15px;
+				font-size: 4vw;
 				span{
 					&:nth-child(1){
-						font-size: 18px;
+						font-size: 5vw;
 						margin-right: 5px;
 					}
 				}
 			}
 			&:nth-child(2){
 				margin-right: 5px;
-				font-size: 15px;
+				font-size: 5vw;
 			}
 		}
 	}

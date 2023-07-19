@@ -8,7 +8,7 @@
 		</div>
 		<div class="login-register-father" >
 			<div class="login-register">
-				<div class="image-head"><img src="http://47.113.189.122/NAS/img/person1.jpg" style="width: 55px ; height: 55px;"></div>
+				<div class="image-head"><img src="/img/person1.jpg" style="width: 55px ; height: 55px;"></div>
 				<div class="content">
 					<div class="content-title">
 						<div @click="login_register">注册/登录</div>
@@ -25,7 +25,7 @@
 			<div class="vip">
 				<div class="vip-left">
 					<span class="iconfont icon-vip"></span>
-					<span>安居客会员</span>
+					<span>VIP会员</span>
 				</div>
 				<div class="vip-right"><span>立即登录领取新手礼包</span> <van-icon name="arrow" /></div>
 			</div>	
@@ -78,7 +78,7 @@
 			    <span class="font">税费计算</span>
 			  </van-grid-item>
 			  <van-grid-item>
-			    <span class="iconfont icon-goufangzige"></span>
+			    <span class="iconfont icon-benzi"></span>
 			    <span class="font">购房资格</span>
 			  </van-grid-item>
 			  <van-grid-item>

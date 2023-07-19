@@ -17,7 +17,7 @@
 			<van-list>
 				<router-link to="/chat" style="color: #000;">
 				<div class="chat_1">
-					<div class="image"><img src="http://47.113.189.122/NAS/img/person1.jpg"/></div>
+					<div class="image"><img src="/img/person1.jpg"/></div>
 					<div class="content">
 						<div>
 							<span>米哈游</span>
@@ -29,7 +29,7 @@
 				</div>
 				</router-link>
 				<div class="chat_1">
-					<div class="image"><img src="http://47.113.189.122/NAS/img/person1.jpg"/></div>
+					<div class="image"><img src="/img/person1.jpg"/></div>
 					<div class="content">
 						<div>
 							<span>米哈游</span>
@@ -40,7 +40,7 @@
 					</div>
 				</div>
 				<div class="chat_1">
-					<div class="image"><img src="http://47.113.189.122/NAS/img/person1.jpg"/></div>
+					<div class="image"><img src="/img/person1.jpg"/></div>
 					<div class="content">
 						<div>
 							<span>米哈游</span>
@@ -51,7 +51,7 @@
 					</div>
 				</div>
 				<div class="chat_1">
-					<div class="image"><img src="http://47.113.189.122/NAS/img/person1.jpg"/></div>
+					<div class="image"><img src="/img/person1.jpg"/></div>
 					<div class="content">
 						<div>
 							<span>米哈游</span>
@@ -62,7 +62,7 @@
 					</div>
 				</div>
 				<div class="chat_1">
-					<div class="image"><img src="http://47.113.189.122/NAS/img/person1.jpg"/></div>
+					<div class="image"><img src="/img/person1.jpg"/></div>
 					<div class="content">
 						<div>
 							<span>米哈游</span>
@@ -73,7 +73,7 @@
 					</div>
 				</div>
 				<div class="chat_1">
-					<div class="image"><img src="http://47.113.189.122/NAS/img/person1.jpg"/></div>
+					<div class="image"><img src="/img/person1.jpg"/></div>
 					<div class="content">
 						<div>
 							<span>米哈游</span>
@@ -101,7 +101,7 @@
 			  </div>
 				  <van-list>
 					<div class="notify_1">
-						<div class="image"><img src="http://47.113.189.122/NAS/img/person1.jpg"/></div>
+						<div class="image"><img src="/img/person1.jpg"/></div>
 						<div class="content">
 							<div>
 								<span>通知</span>
@@ -111,7 +111,7 @@
 						</div>
 					</div>
 					<div class="notify_1">
-						<div class="image"><img src="http://47.113.189.122/NAS/img/person1.jpg"/></div>
+						<div class="image"><img src="/img/person1.jpg"/></div>
 						<div class="content">
 							<div>
 								<span>通知</span>

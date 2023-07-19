@@ -31,9 +31,9 @@
 					<div class="image">
 						<div>专家解读两会表述：2018楼市调控政策将宽于过去</div>
 						<div>
-							<div><img src="http://47.113.189.122/NAS/img/house1.jpg"/></div>
-							<div><img src="http://47.113.189.122/NAS/img/house2.jpg"/></div>
-							<div><img src="http://47.113.189.122/NAS/img/house3.jpg"/></div>
+							<div><img src="/img/house1.jpg"/></div>
+							<div><img src="/img/house2.jpg"/></div>
+							<div><img src="/img/house3.jpg"/></div>
 						</div>
 						<div>
 							<span>买房人</span>
@@ -44,9 +44,9 @@
 					<div class="image">
 						<div>专家解读两会表述：2018楼市调控政策将宽于过去</div>
 						<div>
-							<div><img src="http://47.113.189.122/NAS/img/house1.jpg"/></div>
-							<div><img src="http://47.113.189.122/NAS/img/house2.jpg"/></div>
-							<div><img src="http://47.113.189.122/NAS/img/house3.jpg"/></div>
+							<div><img src="/img/house1.jpg"/></div>
+							<div><img src="/img/house2.jpg"/></div>
+							<div><img src="/img/house3.jpg"/></div>
 						</div>
 						<div>
 							<span>买房人</span>

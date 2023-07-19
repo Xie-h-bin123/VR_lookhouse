@@ -14,9 +14,9 @@
 <!-- 逻辑层 -->
 <script setup>
 const images = [
-      'http://47.113.189.122/NAS/img/bg1.jpg',
-      'http://47.113.189.122/NAS/img/bg2.jpg',
-	  'http://47.113.189.122/NAS/img/bg3.jpg'
+      '/img/bg1.jpg',
+      '/img/bg2.jpg',
+	  '/img/bg3.jpg'
     ];
 </script>
 
