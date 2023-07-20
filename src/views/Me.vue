@@ -11,7 +11,8 @@
 				<div class="image-head"><img src="/img/person1.jpg" style="width: 55px ; height: 55px;"></div>
 				<div class="content">
 					<div class="content-title">
-						<div @click="login_register">注册/登录</div>
+						<div @click="login_register" v-if="name">{{name}}</div>
+						<div v-else @click="login_register">注册/登录</div>
 						<div>登入后可以体验更多服务 
 							<van-icon name="arrow" /></div>
 					</div>
@@ -153,6 +154,7 @@ const login_register = () =>{
 		name:'register'
 	})
 }
+const name = sessionStorage.getItem('name');
 </script>
 
 

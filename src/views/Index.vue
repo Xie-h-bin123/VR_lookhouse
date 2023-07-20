@@ -11,8 +11,7 @@
         <div class="main_function">
 			<div class="main_block">
 				<div class="main_block_in">
-					<Tab></Tab>
-					
+					<Tab></Tab>			
 				</div>
 			</div>
 		</div>
@@ -23,16 +22,16 @@
 					<div class="content_1">活动优惠</div>
 					<div class="content_2">参与即享更多优惠</div>
 					<div>
-						<img src="/img/house1.jpg"/>
-						<img src="/img/house2.jpg"/>
+						<img v-lazy="'/img/house1.jpg'"/>
+						<img v-lazy="'/img/house2.jpg'"/>
 					</div>
 				</div>
 				<div class="active_content_2">
 					<div class="content_1">新盘强先</div>
 					<div class="content_2">新盘抢先 先赌为快</div>
 					<div>
-						<img src="/img/house3.jpg"/>
-						<img src="/img/house4.jpg"/>
+						<img v-lazy="'/img/house3.jpg'"/>
+						<img v-lazy="'/img/house4.jpg'"/>
 					</div>
 				</div>
 			</div>
@@ -51,10 +50,10 @@
 			<div class="title"><span>为你推荐二手房</span></div>
 			<div class="content">
 				<div class="img">
-					<img src="/img/bg1.jpg"/>
+					<img v-lazy="'/img/bg1.jpg'"/>
 					<div class="right-images">
-						<img src="/img/bg2.jpg"/>
-						<img src="/img/bg3.jpg"/>
+						<img v-lazy="'/img/bg2.jpg'"/>
+						<img v-lazy="'/img/bg3.jpg'"/>
 					</div>
 				</div>
 				<div class="text">
@@ -85,7 +84,7 @@
 				<router-link to="/detail" style="color: #000;">
 			    <div class="list">
 			        <div class="list_branch">
-			        <img src="/img/bg1.jpg">
+			        <img v-lazy="'/img/bg1.jpg'">
 			        <div class="content">
 			            <div >山水文园2式1厅</div>
 			            <div>87.79m²</div>
@@ -97,7 +96,7 @@
 				</router-link>
 			    <div class="list">
 			        <div class="list_branch">
-			        <img src="/img/bg2.jpg">
+			        <img v-lazy="'/img/bg2.jpg'">
 			        <div class="content">
 			            <div >山水文园2式1厅</div>
 			            <div>87.79m²</div>
@@ -111,7 +110,7 @@
 			<div class="title"><span>为你推荐租房</span></div>
 			<div class="content">
 				<div class="content_1">
-					<img src="/img/bg1.jpg"/>
+					<img v-lazy="'/img/bg1.jpg'"/>
 					<div>
 						<div><span>君泰中央公园A区</span></div>
 						<div><span>2式一厅|整组</span></div>
@@ -120,7 +119,7 @@
 					</div>
 				</div>
 				<div class="content_2">
-					<img src="/img/bg1.jpg"/>
+					<img v-lazy="'/img/bg1.jpg'"/>
 					<div>
 						<div><span>君泰中央公园A区</span></div>
 						<div><span>2式一厅|整组</span></div>
@@ -129,7 +128,7 @@
 					</div>
 				</div>
 				<div class="content_3">
-					<img src="/img/bg1.jpg"/>
+					<img v-lazy="'/img/bg1.jpg'"/>
 					<div>
 						<div><span>君泰中央公园A区</span></div>
 						<div><span>2式一厅|整组</span></div>
@@ -138,7 +137,7 @@
 					</div>
 				</div>
 				<div class="content_4">
-					<img src="/img/bg1.jpg"/>
+					<img v-lazy="'/img/bg1.jpg'"/>
 					<div>
 						<div><span>君泰中央公园A区</span></div>
 						<div><span>2式一厅|整组</span></div>

@@ -11,6 +11,7 @@ import Recommend from '../views/Recommend.vue'
 import Register from '../views/Register.vue'
 import Login from '../views/Login.vue'
 import OtherVR from '../views/OtherVR.vue'
+import Chat_other from '../views/Chat_other.vue'
 
 const routes = [
   {
@@ -72,6 +73,11 @@ const routes = [
   	path: '/otherVR',
   	name: 'otherVR',
   	component: OtherVR
+  },
+  {
+  	path: '/chat_other',
+  	name: 'chat_other',
+  	component: Chat_other
   },
 ]
 

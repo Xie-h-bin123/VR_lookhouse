@@ -23,8 +23,11 @@
 				<span class="iconfont icon-yuyin" style="font-size: 30px;"></span>
 			</template>
 			<template #title>
-				<div>
+				<!-- <div>
 					<input style="    border: none;width: 220px;height: 28px;margin-bottom: 5px;" />
+				</div> -->
+				<div>
+				  <input style="border: none;width: 220px;height: 28px;margin-bottom: 5px;" type="text" v-model="inputText" @keyup.enter="sendMessage">
 				</div>
 			</template>
 			<template #right>
@@ -38,7 +41,18 @@
 
 <!-- 逻辑层 -->
 <script setup>
+	import { ref, reactive } from 'vue';
+	const inputText = ref('');
+    const messages = reactive([]);
+    const chatMessages = ref(null);
 
+    const sendMessage = () => {
+      if (inputText.value) {
+        messages.push({ content: inputText.value});
+        inputText.value = '';
+        chatMessages.value.scrollTo(0, chatMessages.value.scrollHeight);
+      }
+    };
 </script>
 
 

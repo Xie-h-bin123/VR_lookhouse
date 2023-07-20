@@ -11,17 +11,19 @@
            <div class="on">登入</div> 
            <div @click="register">注册</div>
         </div>
+		<form @submit.prevent="login">
         <div class="form vw80">
             <div class="tel">
-                <input type="text" placeholder="请输入手机号或邮箱">
+                <input v-model="loginName" type="text" placeholder="请输入手机号或邮箱" >
                 <span class="iconfont icon-icon_xinjian"></span>
             </div>
             <div class="pwd">
-                <input type="password" placeholder="请输入密码">
+                <input v-model="loginPassword" type="password" placeholder="请输入密码" >
                 <span class="iconfont icon-jiesuo"></span>
             </div>
-            <button>登录</button>
+            <button type="submit">登录</button>
         </div>
+		</form>
         <div class="others vw80">
             <span>————</span>
             <svg class="icon" aria-hidden="true">
@@ -40,10 +42,38 @@
 
 <!-- 逻辑层 -->
 <script setup>
+	import { reactive, ref } from 'vue';
 	import {useRouter} from 'vue-router';
-	const route= useRouter();
-	const onClickLeft = () => {route.push({path:'/me'})};
-	const register = () => {route.push({path:'/register'})}
+	import axios from 'axios';
+	const router= useRouter();
+	const onClickLeft = () => {router.push({path:'/me'})};
+	const register = () => {router.push({path:'/register'})}
+	
+	
+	const loginName = ref('');
+	const loginPassword = ref('');
+	const login = () => {
+	   const data = {
+	      name: loginName.value,
+	      password: loginPassword.value
+	    };
+	    axios.post('http://localhost:8080/user/login', data, {
+	      headers: {
+	        'Content-Type': 'application/json'
+	      }
+	    }).then(response => {
+	    if (response.data === 'Success') {
+	      alert('登录成功');
+	      router.push('/me'); // 登录成功后跳转到/me页面
+		  sessionStorage.setItem('name', loginName.value); 
+		  const name = sessionStorage.getItem('name');
+	    } else {
+	      alert('登录失败：用户名或密码错误');
+	    }
+	  }).catch(error => {
+	    alert('登录失败：' + error.message);
+	  });
+	};
 </script>
 
 

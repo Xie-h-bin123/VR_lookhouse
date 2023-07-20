@@ -8,11 +8,13 @@
   },
   "dependencies": {
     "@quasar/extras": "^1.0.0",
+    "axios": "^1.4.0",
     "core-js": "^3.8.3",
     "quasar": "^2.0.0",
     "three": "^0.154.0",
     "vant": "^4.6.2",
     "vue": "^3.2.13",
+    "vue-lazyload": "^3.0.0",
     "vue-router": "^4.0.3"
   },
   "devDependencies": {

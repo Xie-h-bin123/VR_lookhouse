@@ -112,7 +112,7 @@ const vr = () => {router.push('/detail')}
     width: 60px;
 }
 .second-hand .toolbar .icon-dizhi>span{
-    font-size: 5px;
+    font-size: 15px;
 }
 .second-hand .search{
     margin: 0;

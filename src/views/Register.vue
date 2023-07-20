@@ -11,21 +11,24 @@
            <div @click="login">登入</div>
            <div class="on">注册</div>
         </div>
+		<form @submit.prevent="register">
         <div class="form vw80">
             <div class="tel">
-                <input type="text" placeholder="请输入手机号或邮箱">
+                <input v-model="Name" type="text" placeholder="请输入手机号或邮箱">
                 <span class="iconfont icon-icon_xinjian"></span>
             </div>
             <div class="pwd">
-                <input type="password" placeholder="请输入密码">
+                <input v-model="Password" type="password" placeholder="请输入密码">
                 <span class="iconfont icon-jiesuo"></span>
             </div>
             <div class="pwds">
-                <input type="password" placeholder="请再次输入密码">
+                <input type="password" placeholder="请再次输入密码" >
                 <span class="iconfont icon-jiesuo"></span>
             </div>
-            <button>注册</button>
+            <button type="submit">注册</button>
+
         </div>
+		</form>
         <div class="others vw80">
             <span>————</span>
             <svg class="icon" aria-hidden="true">
@@ -44,10 +47,35 @@
 
 <!-- 逻辑层 -->
 <script setup>
+	import { reactive, ref } from 'vue';
 	import {useRouter} from 'vue-router';
-	const route= useRouter();
-	const onClickLeft = () => {route.push({path:'/me'})};
-	const login = () => {route.push({path:'/login'})}
+	import axios from 'axios';
+	const router= useRouter();
+	const onClickLeft = () => {router.push({path:'/me'})};
+	const login = () => {router.push({path:'/login'})}
+	
+	const Name = ref('');
+	const Password = ref('');
+	const register = () => {
+	   const data = {
+	      name: Name.value,
+	      password: Password.value
+	    };
+	    axios.post('http://localhost:8080/user/register', data, {
+	      headers: {
+	        'Content-Type': 'application/json'
+	      }
+	    }).then(response => {
+	    if (response.data == "success") {
+	      alert('注册成功');
+	      router.push('/login'); // 注册成功后跳转到/login页面
+	    } else {
+	      alert('注册失败：用户名已存在');
+	    }
+	  }).catch(error => {
+	    alert('注册失败：' + error.message);
+	  });
+	};
 </script>
 
 

@@ -11,6 +11,6 @@ module.exports = defineConfig({
     }
   },
   devServer: {
-      port: 3000 // 更改为您想要的端口号
+      port: 8080 // 更改为您想要的端口号
     }
 })
